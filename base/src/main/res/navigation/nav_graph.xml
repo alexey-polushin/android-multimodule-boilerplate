@@ -15,7 +15,8 @@
 
     <action
         android:id="@+id/navigateToFeatureMainFlowFragment"
-        app:destination="@+id/featureMainFlowFragment"/>
+        app:destination="@+id/featureMainFlowFragment"
+        app:popUpTo="@id/nav_graph"/>
 
 
 </navigation>
