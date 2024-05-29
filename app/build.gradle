@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'multimodule.boilerplate'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "multimodule.boilerplate"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("todo")
+            storePassword 'todo'
+            keyAlias 'todo'
+            keyPassword 'todo'
+        }
+    }
+
+    flavorDimensions = ["environment"]
+    productFlavors {
+        prod {
+            dimension "environment"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':feature_main')
+    implementation project(':feature_splash')
+
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+}

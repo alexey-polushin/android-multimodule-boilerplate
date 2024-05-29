@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    namespace 'multimodule.boilerplate.base'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 34
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    api project(":core")
+    api project(":core_data")
+
+    api 'androidx.core:core-ktx:1.13.1'
+    api 'androidx.appcompat:appcompat:1.7.0'
+    api 'com.google.android.material:material:1.12.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.4'
+    api 'androidx.navigation:navigation-fragment-ktx:2.7.7'
+    api 'androidx.navigation:navigation-ui-ktx:2.7.7'
+    api 'androidx.preference:preference-ktx:1.2.1'
+
+    debugApi "com.github.chuckerteam.chucker:library:4.0.0"
+    releaseApi "com.github.chuckerteam.chucker:library-no-op:4.0.0"
+
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="common__error_no_connection">Отсутствует соединение с интернетом</string>
+    <string name="common__error_unknown">Произошла непредвиденная ошибка</string>
+
+    <plurals name="common__seconds" tools:ignore="ImpliedQuantity">
+        <item quantity="one">секунда</item>
+        <item quantity="few">секунды</item>
+        <item quantity="many">секунд</item>
+        <item quantity="other">секунд</item>
+    </plurals>
+    <plurals name="common__seconds_accusative" tools:ignore="ImpliedQuantity">
+        <item quantity="one">секунду</item>
+        <item quantity="few">секунды</item>
+        <item quantity="many">секунд</item>
+        <item quantity="other">секунд</item>
+    </plurals>
+    <plurals name="common__minutes" tools:ignore="ImpliedQuantity">
+        <item quantity="one">минута</item>
+        <item quantity="few">минуты</item>
+        <item quantity="many">минут</item>
+        <item quantity="other">минут</item>
+    </plurals>
+    <plurals name="common__minutes_aсcusative" tools:ignore="ImpliedQuantity">
+        <item quantity="one">минуту</item>
+        <item quantity="few">минуты</item>
+        <item quantity="many">минут</item>
+        <item quantity="other">минут</item>
+    </plurals>
+    <string name="common__seconds_short">сек</string>
+    <string name="common__minutes_short">мин</string>
+</resources>

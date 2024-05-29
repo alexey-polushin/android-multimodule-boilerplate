@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature_splash__graph"
+    app:startDestination="@id/splashFeatureFragment">
+
+    <fragment
+        android:id="@+id/splashFeatureFragment"
+        android:name="multimodule.boilerplate.feature_splash.fragments.SplashFeatureFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment__splash_screen">
+
+    </fragment>
+
+</navigation>

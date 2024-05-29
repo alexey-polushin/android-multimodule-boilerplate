@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="common__error_no_connection">No internet connection</string>
+    <string name="common__error_unknown">Unexpected error</string>
+
+    <plurals name="common__seconds" tools:ignore="ImpliedQuantity">
+        <item quantity="one">second</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+    <plurals name="common__seconds_accusative" tools:ignore="ImpliedQuantity">
+        <item quantity="one">second</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+    <plurals name="common__minutes" tools:ignore="ImpliedQuantity">
+        <item quantity="one">minute</item>
+        <item quantity="other">minutes</item>
+    </plurals>
+    <plurals name="common__minutes_aсcusative" tools:ignore="ImpliedQuantity">
+        <item quantity="one">second</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+    <string name="common__seconds_short">sec</string>
+    <string name="common__minutes_short">min</string>
+</resources>
