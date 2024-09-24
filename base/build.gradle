@@ -28,13 +28,12 @@ android {
 dependencies {
     api project(":core")
     api project(":core_data")
+    api project(':navigation')
 
     api 'androidx.core:core-ktx:1.13.1'
     api 'androidx.appcompat:appcompat:1.7.0'
     api 'com.google.android.material:material:1.12.0'
     api 'androidx.constraintlayout:constraintlayout:2.1.4'
-    api 'androidx.navigation:navigation-fragment-ktx:2.7.7'
-    api 'androidx.navigation:navigation-ui-ktx:2.7.7'
     api 'androidx.preference:preference-ktx:1.2.1'
 
     debugApi "com.github.chuckerteam.chucker:library:4.0.0"

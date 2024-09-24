@@ -8,7 +8,6 @@ import multimodule.boilerplate.core_data.di.apiModule
 import multimodule.boilerplate.core_data.di.configurationModule
 import multimodule.boilerplate.core_data.di.dbModule
 import multimodule.boilerplate.di.basicApplicationModule
-import multimodule.boilerplate.di.viewModelModule
 import org.kodein.di.DI
 import org.kodein.di.DIAware
 
@@ -22,6 +21,5 @@ class App: Application(), DIAware {
         import(accountModule)
         import(configurationModule)
         import(baseModule)
-        import(viewModelModule)
     }
 }

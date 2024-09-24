@@ -6,7 +6,7 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import multimodule.boilerplate.base.NavGraphDirections
+import multimodule.boilerplate.navigation.NavGraphDirections
 import multimodule.boilerplate.base.base.BaseActivity
 import multimodule.boilerplate.base.base.BaseFragment
 import multimodule.boilerplate.base.extensions.flowNavigateSafely

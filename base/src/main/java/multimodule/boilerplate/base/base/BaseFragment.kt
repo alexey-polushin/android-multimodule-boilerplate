@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import multimodule.boilerplate.base.di.basicFragmentModule
@@ -63,5 +64,11 @@ abstract class BaseFragment : Fragment(), DIAware, BaseFragmentInterface {
             requireContext()
         ).setMessage(message)
             .show()
+    }
+
+    fun findFlowNavController(): NavController? {
+        val navHostFragment = parentFragment as BaseNavHostFragment?
+        val parent = navHostFragment?.parentFragment as BaseFlowFragment?
+        return parent?.findNavController()
     }
 }

@@ -40,8 +40,8 @@ class MainActivity : BaseActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as BaseNavHostFragment
         navController = navHostFragment.navController
-        val navGraph = navController.navInflater.inflate(multimodule.boilerplate.base.R.navigation.nav_graph)
-        navGraph.setStartDestination(multimodule.boilerplate.base.R.id.featureSplashFlowFragment)
+        val navGraph = navController.navInflater.inflate(multimodule.boilerplate.navigation.R.navigation.nav_graph)
+        navGraph.setStartDestination(multimodule.boilerplate.navigation.R.id.featureSplashFlowFragment)
         navController.graph = navGraph
     }
 

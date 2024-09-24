@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.doOnLayout
@@ -33,12 +32,6 @@ abstract class BaseActivity: AppCompatActivity(), DIAware {
         ActivityResultContracts.RequestPermission()
     ) { _ ->
 
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        // Принудительное отключение темной темы
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        super.onCreate(savedInstanceState)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -69,4 +62,5 @@ abstract class BaseActivity: AppCompatActivity(), DIAware {
             WindowCompat.getInsetsController(window, it).hide(WindowInsetsCompat.Type.ime())
         }
     }
+
 }
